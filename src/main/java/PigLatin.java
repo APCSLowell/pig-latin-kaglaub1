@@ -31,6 +31,11 @@ public class PigLatin {
         //precondition: sWord is a valid String of length greater than 0.
         //postcondition: returns the position of the first vowel in sWord.  If there are no vowels, returns -1
 	    // your code goes here
+	    boolean found = false;
+	    int loc = 0;
+	    while (found == false){
+		    if (
+	    }
         return -1;
     }
 
