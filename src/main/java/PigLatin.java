@@ -31,10 +31,16 @@ public class PigLatin {
         //precondition: sWord is a valid String of length greater than 0.
         //postcondition: returns the position of the first vowel in sWord.  If there are no vowels, returns -1
 	    // your code goes here
+	    String vowels = new String("aeiouAEIOU");
 	    boolean found = false;
 	    int loc = 0;
-	    while (found == false){
-		    if (
+	    while (found == false && loc < sWord.length()){
+		    if (vowels.contains(sWord.charAt(loc){
+			    return loc;
+		    }else{
+			    loc += 1;
+		    }
+		    
 	    }
         return -1;
     }
