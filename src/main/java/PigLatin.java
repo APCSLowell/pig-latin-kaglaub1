@@ -35,11 +35,13 @@ public class PigLatin {
 	    boolean found = false;
 	    int loc = 0;
 	    while (found == false && loc < sWord.length()){
-		    if (vowels.contains(sWord.charAt(loc)) == true){
-			    return loc;
-		    }else{
-			    loc += 1;
+		    for (int i = 0; i < vowels.length; i++){
+			if (vowels.charAt(i).equals(sWord.charAt(loc))){
+				return loc;
+		    	}
 		    }
+		    loc += 1;
+		    
 		    
 	    }
         return -1;
