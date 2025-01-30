@@ -35,7 +35,7 @@ public class PigLatin {
 	    boolean found = false;
 	    int loc = 0;
 	    while (found == false && loc < sWord.length()){
-		    for (int i = 0; i < vowels.length; i++){
+		    for (int i = 0; i < vowels.length(); i++){
 			if (vowels.charAt(i).equals(sWord.charAt(loc))){
 				return loc;
 		    	}
